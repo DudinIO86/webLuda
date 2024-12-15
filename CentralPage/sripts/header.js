@@ -1,3 +1,5 @@
+//блок, отвечающий за верхнюю часть сайта (header)
+
 const headerContent=document.querySelector('.header');
 //ЛЕВЫЙ БЛОК
 const leftBlock=document.createElement('section');

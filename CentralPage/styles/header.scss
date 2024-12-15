@@ -9,15 +9,16 @@
   &__img {
     width: 90%;
     display: flex;
-flex-wrap: wrap;
-flex-direction: column;
-  justify-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-items: center;
     padding: 10px;
   }
 }
 
 .rightBlock {
   width: 100%;
+  //меню
   &__menu {
     width: 100%;
     display: flex;
@@ -33,6 +34,7 @@ flex-direction: column;
     font-size: 20px;
     font-weight: 800;
   }
+  //главный текст
   &__gtxt {
     display: flex;
     flex-wrap: wrap;
