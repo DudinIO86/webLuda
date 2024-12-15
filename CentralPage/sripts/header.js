@@ -6,6 +6,7 @@ headerContent.appendChild(leftBlock);
 //вставка аватара
 const leftBlockContent=document.querySelector('.leftBlock');
 const lbIMG=document.createElement('img');
+lbIMG.classList.add('leftBlock__img');
 lbIMG.src='CentralPage/content/avatar.jpg';
 leftBlockContent.appendChild(lbIMG);
 
@@ -44,6 +45,27 @@ menuOtzeve.href="#";
 menuOtzeve.textContent="Отзывы";
 menu.appendChild(menuOtzeve);
 
+//создание главной надписи
+const reklama=document.createElement('div');
+reklama.classList.add('rightBlock__gtxt');
+rightBlock.appendChild(reklama);
 
+const GTEXT1=document.createElement('h2');
+GTEXT1.classList.add('rightBlock__text1');
+GTEXT1.textContent="Ваш любимый фотограф";
+reklama.appendChild(GTEXT1);
 
+const GTEXT2=document.createElement('h1');
+GTEXT2.classList.add('rightBlock__text2');
+GTEXT2.textContent="Людмила";
+reklama.appendChild(GTEXT2);
 
+const GTEXT3=document.createElement('h1');
+GTEXT3.classList.add('rightBlock__text2');
+GTEXT3.textContent="Дудина";
+reklama.appendChild(GTEXT3);
+
+const rbIMG=document.createElement('img');
+rbIMG.src='CentralPage/content/avatar.jpg';
+rbIMG.classList.add('rightBlock__img');
+reklama.appendChild(rbIMG);
