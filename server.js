@@ -1,18 +1,16 @@
-const http = require("http");
+const express = require("express");
 const url=require("url");
 const fs=require("fs");
+const http = require("http");
 
-const server = http.createServer((req, res) => {
-    let nopath = 'index.html';
-    fs.readFile(nopath, (err , html) => {
-      
-        res.end(html);
 
-    });
+var app = express();
+app.use(express.static(__dirname+'/'));
 
-  
+app.get('/',function(req,res){
+    
+    res.sendFile(__dirname + "/index.html")
 });
 
-const port = 3000;
-
-server.listen(port);
+server=http.createServer(app);
+server.listen(8080);
