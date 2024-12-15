@@ -1,5 +1,13 @@
-body{
+* { margin: 0; padding: 0; }
+
+.body{
     background-image: url('../content/backgroudFon.jpg');
     background-size: cover;
     
+    margin: 20px;
+    display: flex;
+   
+    flex-direction: column;
+    width: 100%;
+
 }

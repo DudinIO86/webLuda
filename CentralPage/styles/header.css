@@ -1,1 +1,23 @@
-/*# sourceMappingURL=header.css.map */
+@import url("./dataValues.css");
+.header {
+  background-color: var(--backroundColor);
+  display: flex;
+}
+
+.rightBlock {
+  width: 100%;
+}
+.rightBlock__menu {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+.rightBlock__menuEl {
+  font-style: normal;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 800;
+}/*# sourceMappingURL=header.css.map */
